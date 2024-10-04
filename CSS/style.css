@@ -1,0 +1,264 @@
+body{
+    background-color: #b0daef9d;
+    margin-bottom: 50px; 
+}
+header {
+    position:fixed;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    width:100%;
+    left:0;
+    align-items: flex-end;
+}
+header{
+    top:0;
+}
+.header-image {
+    width: 125px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.btn{
+    padding:10px 20px;
+    font-size: 18px;
+    border:none;
+    background-color: white;
+    align-items: flex-end;
+}
+
+.btn:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+.signup-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%; 
+    height: 60vh; 
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: auto; 
+    padding: 20px; 
+}
+
+.login-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    padding: 20px;
+}
+
+.home-display{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: auto; 
+    max-width: 800px; 
+}
+
+.home-display img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: auto repeat(7, 1fr);
+    grid-gap: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.schedule-day {
+    border: 4px solid black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-items {
+    margin-top: 10px;
+    max-height: 400px; 
+    overflow-y: auto;
+
+}
+
+.schedule-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.schedule-item strong {
+    display: block;
+}
+
+.schedule-item a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .schedule-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.available {
+    background-color: green;
+}
+
+.booked {
+    background-color: yellow;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 100px;
+}
+
+.grid-item {
+    border: 4px solid black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-container {
+    margin: 250px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 4px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #a69e9e;
+}
+
+h2{
+    text-align: center;
+}
+.patient-info{
+    position: fixed;
+    display: inline-block;
+    left: 35%;
+    top:20%;
+    padding-bottom: 25px;
+    background-color: white;
+    border: 4px solid black;
+    width:25%;
+    padding: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-info{
+    position: fixed;
+    display: inline-block;
+    left: 35%;
+    top:20%;
+    padding-bottom: 25px;
+    background-color: white;
+    border: 4px solid black;
+    width:25%;
+    padding: 50px;
+    text-align: left;
+}
+
+.table-container {
+    width: 100%;
+    margin: 150px auto;
+    
+}
+
+.table-scroll{
+    max-height: 400px; 
+    overflow-y: auto;
+}
+
+#about_appointment, #during_appointment, #diagnosis, #treatment{
+    width: 90%; 
+    padding: 10px;
+}
+
+.healthreport-box{
+    position: fixed;
+    display: inline-block;
+    left: 35%;
+    top:10%;
+    padding-bottom: 25px;
+    background-color: white;
+    border: 4px solid black;
+    width:25%;
+    padding: 50px;
+    text-align: left;
+}
+
+#login-email, #signup-email{
+    width:80%;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
